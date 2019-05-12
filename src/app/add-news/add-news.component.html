@@ -1,0 +1,29 @@
+<div class="container">
+  
+    <form (ngSubmit)="(news)" #news="ngForm" id="addNews">
+      <img id="logo-img" src="assets/fake.svg">
+  
+      <div class="form-group">
+        <input type="text" class="form-control" id="title" placeholder="title" required [(ngModel)]="title" name="title">
+      </div>
+
+      <div class="form-group">
+        <input type="text" class="form-control" id="uploader" placeholder="uploader" required [(ngModel)]="uploader" name="uploader">
+      </div>
+      <input type="hidden" class="form-control" id="date" required [(ngModel)]="date" name="date" value="2019">
+      <div class="form-group">
+          <input type="textarea" class="form-control" id="text" placeholder="text" required [(ngModel)]="text" name="text">
+      </div>
+      <input type="hidden" class="form-control" id="ertekeles" required [(ngModel)]="ertekeles" name="ertekeles" value="0">
+      <input type="hidden" class="form-control" id="mutat" required [(ngModel)]="mutat" name="mutat" value="false">
+
+
+      <br>
+
+      <div class="button-center">
+        <button type="submit" class="btn btn-login">Add</button><button (click)=navigate()>Cancel</button>
+      </div>
+      
+    </form>
+    
+  </div>

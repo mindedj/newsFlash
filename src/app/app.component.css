@@ -1,0 +1,99 @@
+/*primaryFont: "Lato", sans-serif;
+whiteColor: #ffffff;
+primaryColor: #2fe1d6;
+secondaryColor: #35bab2;
+tertiaryColor: #45183c;
+accentColor: #44ede3;
+buttonColor: #f12b6b;
+darkTextGrayColor: #4a4a4a;
+mediumTextGrayColor: #827f83;
+lightTextGrayColor: #afafaf;
+inactiveGrayColor: #d8d8d8;
+*/
+
+
+
+app-root {
+  box-sizing: border-box;
+  height: 100%;
+  background: black;
+}
+
+div.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  height: 100%;
+
+
+}
+
+input {
+  width: 300px;
+  height: 30px;
+  margin-bottom: 15px;
+
+  background: #ffffff;
+  mix-blend-mode: normal;
+
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  border-radius: 10px;
+  border: 0.1px solid transparent;
+
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  font-size: 12px;
+  padding-left: 10px;
+
+  color: #4d4d4d;
+}
+
+
+
+.btn {
+  width: 100px;
+  height: 30px;
+
+  background: #46b343;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.45), 0 1px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  border: 0.1px solid transparent;
+
+  color: #ffffff;
+  font-weight: bold;
+
+  cursor: pointer;
+
+  font-size: 12px;
+}
+
+.btn:hover {
+  background: #3c9c39;
+}
+
+select {
+  width: 313px;
+  height: 36px;
+  margin-bottom: 15px;
+  border-radius: 30px;
+  font-family: sans-serif;
+  padding-left: 10px;
+  border: 0.1px solid transparent;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+textarea {
+  width: 294px;
+  height: 25px !important;
+  margin-bottom: 15px;
+  border-radius: 30px;
+  font-family: sans-serif;
+  padding-left: 10px;
+  padding-top: 5px;
+  font-size: 12px;
+  border: 0.1px solid transparent;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}

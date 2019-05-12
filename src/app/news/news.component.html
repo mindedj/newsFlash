@@ -1,0 +1,33 @@
+<div *ngFor="let news of newsArray">
+  <mat-card class="card">
+    <mat-card-header>
+      <div>
+          <mat-card-title>{{news.title}}</mat-card-title>
+          <h5>Posted by {{news.uploader}} at {{news.date}}</h5>
+      </div>
+    </mat-card-header>
+    <button *ngIf="!news.mutat; else elseBlock" class="show" (click)=show(news)>Show</button>
+    <ng-template #elseBlock>
+        <button *ngIf="news.mutat; else elseBlock" class="show" (click)=show(news)>Hide</button>
+    </ng-template>
+    <div *ngIf="news.mutat">
+      <img mat-card-image src={{news.src}}>
+      <mat-card-content>
+        <p>
+          {{news.text}}
+        </p>
+      </mat-card-content>
+      <mat-card-actions>
+        <div class = "buttons">
+          <button mat-button class="btn" (click)=ertekelPozitiv(news)>+</button>
+          {{news.ertekeles}}
+          <button mat-button class="btn" (click)=ertekelNegativ(news)>-</button>        
+        </div>
+      </mat-card-actions>
+    </div>    
+  </mat-card>
+</div>
+<div >
+  <button (click)="navigate()">Add News</button>
+</div>
+

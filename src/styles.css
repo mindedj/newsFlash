@@ -1,1 +1,25 @@
-/* You can add global styles to this file, and also import other style files */
+@import "../node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css";  
+html {
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(#444444, #3d3d3d);
+    overflow-y: scroll;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    margin: 0px;
+    display: flex;
+    font-family: "Lato", sans-serif;
+    text-shadow: 1px 1px #3a5175be;
+    color: white;
+}
+  
+app-root {
+    width: 100%;
+    height: 100%;
+}
+  
