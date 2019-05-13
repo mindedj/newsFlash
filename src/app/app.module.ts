@@ -10,6 +10,7 @@ import { NewsComponent } from './news/news.component';
 import { NewsService } from './news.service';
 import { AddNewsComponent } from './add-news/add-news.component';
 import { BannerComponent } from './banner/banner.component';
+import { BannerVerticalComponent } from './banner-vertical/banner-vertical.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { BannerComponent } from './banner/banner.component';
     SignupComponent,
     NewsComponent,
     AddNewsComponent,
-    BannerComponent
+    BannerComponent,
+    BannerVerticalComponent
   ],
   imports: [
     BrowserModule,

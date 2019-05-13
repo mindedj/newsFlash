@@ -15,7 +15,7 @@ export class NewsService {
       date: new Date().toLocaleString(),
       text: "Jesus, seems I got it wrong on Bruno Fernandes! City insist they’re *not* in for him. Apologies for the duff information",
       src: "../assets/bruno.png",
-      ertekeles: 0,
+      ertekeles: 10,
       mutat: false
     },
     {
@@ -30,7 +30,7 @@ export class NewsService {
       Conclusion
       Only Mkhitaryan himself knows why we will or won't go, but I believe I have shown you plenty of reasons for him not to go. Whether it is solidarity with the other Armenians not allowed to enter the country, or the response to/active fostering of Anti-Armenian sentiment by their government, I personally believe he shouldn't go. I hope this gives enough information on the decision that he will have to make.`,
       src: "../assets/mhkitaryan.png",
-      ertekeles: 0,
+      ertekeles: 10,
       mutat: false
     },
     {
@@ -42,7 +42,7 @@ export class NewsService {
          A ideia é continuar com Odysseas Vlachodimos. Já Mile Svilar vai ser emprestado. 
           Leia mais na edição impressa de A BOLA desta sexta-feira` ,
       src: "../assets/cillessen.png",
-      ertekeles: 0,
+      ertekeles: 3,
       mutat: false
     }]
   };

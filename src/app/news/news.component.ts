@@ -51,4 +51,11 @@ export class NewsComponent implements OnInit {
   show(news: News){
     news.mutat = !news.mutat;
   }
+  max(): number {
+    let maximum;
+    for(let news of this.newsArray){
+      maximum = news.ertekeles;
+    }
+    return maximum;
+  }
 }

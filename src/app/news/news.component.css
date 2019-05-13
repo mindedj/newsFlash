@@ -34,3 +34,13 @@ mat-card{
     width: 7.5%;
     box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
 }
+app-banner{
+    max-width: 50%;
+    margin-left: 10%;
+}
+app-banner-vertical {
+    float: right;
+}
+.hovereles:hover{
+    cursor: pointer;
+}

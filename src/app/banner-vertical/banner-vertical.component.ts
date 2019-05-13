@@ -1,14 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-import { AngularWaitBarrier } from 'blocking-proxy/built/lib/angular_wait_barrier';
 
 @Component({
-  selector: 'app-banner',
-  templateUrl: './banner.component.html',
-  styleUrls: ['./banner.component.css']
+  selector: 'app-banner-vertical',
+  templateUrl: './banner-vertical.component.html',
+  styleUrls: ['./banner-vertical.component.css']
 })
-export class BannerComponent implements OnInit {
+export class BannerVerticalComponent implements OnInit {
   current : number = 0;
-  banners : Array<any> = ["../assets/banner0.png", "../assets/banner1.png", "../assets/banner2.png" ];
+  bannersVertical : Array<any> = ["../assets/bannerVertical.png", "../assets/bannerVertical1.png", "../assets/bannerVertical2.png" ];
   
   constructor() { }
 
