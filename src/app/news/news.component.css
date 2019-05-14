@@ -17,6 +17,7 @@ mat-card{
     background-color: #46b343; 
     color: rgba(255, 255, 255, 0.692);
     width: 3.5%;
+    text-align: center;
 }
 .buttons {
     text-align: center;
