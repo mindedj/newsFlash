@@ -52,10 +52,13 @@ export class NewsComponent implements OnInit {
     news.mutat = !news.mutat;
   }
   max(): number {
-    let maximum;
+    let maximum = -100;
     for(let news of this.newsArray){
-      maximum = news.ertekeles;
+      if(news.ertekeles > maximum){
+        maximum = news.ertekeles;
+      }
     }
     return maximum;
   }
+  
 }

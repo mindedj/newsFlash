@@ -20,7 +20,7 @@ mat-card{
 }
 .buttons {
     text-align: center;
-    background: rgba(0, 0, 0, 0.315);
+    
     width: 100%;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -35,12 +35,37 @@ mat-card{
     box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
 }
 app-banner{
-    max-width: 50%;
-    margin-left: 10%;
+   /* max-width: 50%;
+    float: center;*/
+
 }
 app-banner-vertical {
     float: right;
 }
 .hovereles:hover{
     cursor: pointer;
+}
+.hovereles{
+    margin: 0 auto;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+#asd{
+    margin-top: 110px;
+}
+
+header{
+    /*width: 100%;*/
+   /* padding: 0px;*/
+    
+}
+#max{
+    float: left;
+    width: 25%;
+    margin-left: 2.5%;
+}
+#right{
+    float: right;
+    width: 25%;
 }

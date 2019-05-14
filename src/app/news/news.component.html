@@ -1,44 +1,46 @@
-<div>
-  <app-banner></app-banner>
-  <div *ngFor="let news of newsArray" (click)=show(news) class="hovereles">
-    <mat-card class="card">
-      <mat-card-header>
-        <div >
-            <mat-card-title>{{news.title}}</mat-card-title>
-            <h5>Posted by {{news.uploader}} at {{news.date}}</h5>
-        </div>
-      </mat-card-header>
-      <div *ngIf="news.mutat">
-        <img mat-card-image src={{news.src}}>
-        <mat-card-content>
-          <p>
-            {{news.text}}
-          </p>
-        </mat-card-content>
-        <mat-card-actions>
-          <div class = "buttons">
-            <button mat-button class="btn" (click)=ertekelPozitiv(news)>+</button>
-            {{news.ertekeles}}
-            <button mat-button class="btn" (click)=ertekelNegativ(news)>-</button>        
-          </div>
-        </mat-card-actions>
-      </div>    
-    </mat-card>
-  </div>
-  <div>
-    <div *ngFor="let news of newsArray" id = "max">
-      <p *ngIf="news.ertekeles == max()">Legfelkapottabb hír</p>
-
-      <p *ngIf="news.ertekeles == max()">{{news.title}}</p>
-    </div>
-    <div id = "vertical">
-      <app-banner-vertical></app-banner-vertical>
-    </div>
-  </div>
- 
+	<header>
+		<app-banner></app-banner>
+	</header>
+	<div id="left" >
+		<div *ngFor="let news of newsArray" id = "max" style="background-color: rgba(80, 83, 83, 0.623)">
+			<p *ngIf="news.ertekeles == max()" style="text-align: center; color: rgba(255, 255, 255, 0.692)"  >Legfelkapottabb hír</p>
+			<mat-card  *ngIf="news.ertekeles == max()">
+				{{news.title}}
+			</mat-card>       
+		</div>
+		<div>
+			<div *ngFor="let news of newsArray" (click)=show(news) class="hovereles">
+				<mat-card class="card">
+				<mat-card-header>
+					<div >
+						<mat-card-title>{{news.title}}</mat-card-title>
+						<h5>Posted by {{news.uploader}} at {{news.date}}</h5>
+					</div>
+				</mat-card-header>
+				<div *ngIf="news.mutat">
+					<img mat-card-image src={{news.src}}>
+					<mat-card-content>
+					<p>
+						{{news.text}}
+					</p>
+					</mat-card-content>
+					<mat-card-actions>
+					<div class = "buttons">
+						<button mat-button class="btn" (click)=ertekelPozitiv(news)>+</button>
+						{{news.ertekeles}}
+						<button mat-button class="btn" (click)=ertekelNegativ(news)>-</button>        
+					</div>
+					</mat-card-actions>
+				</div>    
+				</mat-card>
+			</div>
+		</div>
+		<div id = "vertical">
+			<app-banner-vertical></app-banner-vertical>
+		</div>
 </div>
 
-<div >
-  <button (click)="navigate()">Add News</button>
+<div class="buttons">
+  <button (click)="navigate()" class="btn">Add News</button>
 </div>
 

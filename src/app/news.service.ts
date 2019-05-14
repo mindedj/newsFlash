@@ -30,7 +30,7 @@ export class NewsService {
       Conclusion
       Only Mkhitaryan himself knows why we will or won't go, but I believe I have shown you plenty of reasons for him not to go. Whether it is solidarity with the other Armenians not allowed to enter the country, or the response to/active fostering of Anti-Armenian sentiment by their government, I personally believe he shouldn't go. I hope this gives enough information on the decision that he will have to make.`,
       src: "../assets/mhkitaryan.png",
-      ertekeles: 10,
+      ertekeles: 9,
       mutat: false
     },
     {

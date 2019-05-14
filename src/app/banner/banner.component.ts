@@ -8,7 +8,7 @@ import { AngularWaitBarrier } from 'blocking-proxy/built/lib/angular_wait_barrie
 })
 export class BannerComponent implements OnInit {
   current : number = 0;
-  banners : Array<any> = ["../assets/banner0.png", "../assets/banner1.png", "../assets/banner2.png" ];
+  banners : Array<any> = ["../assets/bannerHorizontal0.png", "../assets/bannerHorizontal1.png", "../assets/bannerHorizontal2.png" ];
   
   constructor() { }
 
